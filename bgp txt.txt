@@ -1,0 +1,22 @@
+router bgp 7000
+ neighbor 123.4.5.1 remote-as 8000
+ neighbor 125.4.5.2 remote-as 6000
+ network 205.5.5.0 mask 255.255.255.0
+
+
+router bgp 8000
+ neighbor 123.4.5.2 remote-as 7000
+ neighbor 124.4.5.2 remote-as 9000
+ network 200.20.20.0 mask 255.255.255.0
+
+
+router bgp 6000
+ neighbor 125.4.5.1 remote-as 7000
+ neighbor 126.4.5.2 remote-as 9000
+ network 210.10.10.0 mask 255.255.255.0
+
+
+router bgp 9000
+ neighbor 124.4.5.1 remote-as 8000
+ neighbor 126.4.5.1 remote-as 6000
+ network 206.6.6.0 mask 255.255.255.0
